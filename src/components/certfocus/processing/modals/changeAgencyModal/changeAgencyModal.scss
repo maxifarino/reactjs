@@ -1,0 +1,46 @@
+@import "../../../../../assets/sass-variables/_colors";
+
+.change-agency-modal {
+
+  .first-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .change-agency-modal-header {
+    color: $white;
+    font-size: 20px;
+  }
+
+  .change-agency-content {
+    font-size: 15px;
+    padding: 30px 50px;
+
+    .agencyContainer {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      label {
+        color: #2E5965;
+        font-weight: 500;
+        margin-right: 20px;
+      }
+
+      select {
+        height: 32px;
+      }
+    }
+
+    .action-button {
+      margin-left: 20px;
+    }
+
+  }
+}
+
+.modalSelect {
+  width: stretch;
+}

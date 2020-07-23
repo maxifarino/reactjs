@@ -1,0 +1,39 @@
+.tasks-list {
+  .limitedWidthText {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .task-certificate-link {
+    display: block;
+  }
+
+  .tasks-list-table {
+    .status-cell {
+      &.inprogress::before {
+        color: orange;
+      }
+
+      &.completed::before {
+        color: #29AEA2;
+      }
+    }
+  }
+}
+
+.urgent {
+  color: red;
+}
+
+.span-left {
+  border-right: 1px solid;
+}
+
+a {
+  &.totalizerLink {
+    cursor: pointer;
+    margin: 0 5px;
+  }
+}

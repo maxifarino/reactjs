@@ -1,0 +1,63 @@
+@import "../../assets/sass-variables/_colors";
+@import "../../assets/sass-variables/_media_queries";
+
+#SectionChart {
+  @media only screen and (max-width: $break-small) {
+    width: calc(100%);
+    height: inherit;
+  }
+}
+
+#SectionText, #SectionChart {
+  @media only screen and (min-width: $break-large) {
+    width: calc(50% - 22px);
+    height: calc(100% - 22px);
+  }
+}
+
+#JavascriptApiMenu {
+  //height: 150px;
+}
+
+#exagomastercontainer {
+  width: 100% !important;
+}
+
+#ExagoWrapper {
+  //height: calc(100% - 150px);
+  //top: 150px;
+  position: absolute;
+  //width: 95%;
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+}
+#Container-Report, #Container-FullUI {
+  height: calc(100%);
+  position: relative;
+}
+#SectionText, #SectionChart, #SectionReport {
+  float: left;
+  position: relative;
+  padding: 10px;
+}
+#SectionText {
+  border: 1px solid $grey;
+  overflow-y: auto;
+  @media only screen and (max-width: $break-small) {
+    width: calc(100%);
+    height: auto;
+  }
+}
+#SectionReport {
+  width: calc(100%);
+  @media only screen and (max-width: $break-small) {
+    height: inherit;
+  }
+  @media only screen and (min-width: $break-large) {
+    height: 50%;
+  }
+}
+.hide {
+  display: none;
+}

@@ -1,0 +1,273 @@
+@import "../../../assets/sass-variables/_colors";
+
+.admin-view-body {
+  padding: 30px 16px 50px;
+}
+
+.searchModal {
+  height: 600px !important;
+}
+
+section.list-view-table {
+
+  background: $white;
+  border: 1px solid $grey-table;
+  border-top: 0.5px solid $grey-table;
+  box-shadow: $grey-table 0px 0px 5px;
+  .table-wrapper {
+    table {
+      margin-bottom: 0;
+    }
+    thead {
+      tr {
+        box-shadow: 0px 0px 0px 0px transparent;
+      }
+    }
+
+    th {
+      padding: 0;
+      &:empty {
+        cursor: auto;
+        pointer-events: none;
+      }
+      &:first-child {
+        padding-left: 41px;
+      }
+      span.col-th-wrapper {
+        color: $blue-prequal;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 9px 11px;
+        letter-spacing: 0.5px;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        span.col-th-arrow {
+          font-size: 0;
+          display: inline-block;
+          width: 0;
+          border-top: 6px solid $green-dark;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          position: relative;
+          right: -5px;
+          top: -2px;
+        }
+        &.th-desc span.col-th-arrow {
+          border-top: 0px;
+          border-bottom: 6px solid $green-dark;
+          top: -2px;
+        }
+      }
+    }
+    tr {
+      box-shadow: 0px -1px 0px $grey-medium-light;
+      &:nth-of-type(even) {
+        background: $grey-white;
+      }
+    }
+    td {
+      vertical-align: middle;
+      padding: 9px 11px;
+      line-height: 32px;
+      font-size: 13px;
+      font-weight: 200;
+      color: $black;
+
+      span.status-cell {
+        padding-left: 17px;
+        position: relative;
+
+        &:before {
+          content: '\2022';
+          position: absolute;
+          font-size: 30px;
+          left: 0px;
+          color: transparent;
+          top: -10px;
+        }
+
+        &.inactive {
+          &:before {
+            color: $pink;
+          }
+        }
+        &.active,
+        &.complete,
+        &.completed {
+          &:before {
+            color: $sky-blue;
+          }
+        }
+
+        &.changepassword,
+        &.pendinginvitation,
+        &.pendingsubmission,
+        &.incomplete,
+        &.pending {
+          &:before {
+            color: $yellow;
+          }
+        }
+
+        &.prequalified {
+          &:before {
+            color: $green-light;
+          }
+        }
+      }
+
+      img {
+        border-radius: 20px;
+      }
+
+      a {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: $green-dark;
+
+        &.cell-table-link {
+          color: $green-prequal;
+          position: relative;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+          &:before {
+            color: $green-prequal;
+            position: absolute;
+            top: 1px;
+            left: -16px;
+          }
+        }
+      }
+    }
+
+    td {
+      &:first-child {
+        padding-left: 50px;
+      }
+    }
+  }
+}
+
+.pagination-wrapper {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 35px 0 0;
+
+  ul.table-pagination {
+    &, li {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  a.pagination-link {
+    cursor: pointer;
+    background: transparent;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 4px;
+    border: 1px solid $grey-extra-light;
+    padding: 7px 10px;
+    color: $green-dark !important;
+    &.active {
+      background: $green-dark;
+      color: $white !important;
+    }
+  }
+
+  ul.table-pagination > li, span.pag-arrow {
+    margin: 0 2px 0;
+  }
+
+  span.pag-arrow.hide-pag-arrow {
+    display: none;
+  }
+}
+
+// this filter form could be used in another view, so we are going to keep it here
+
+form.list-view-filter-form {
+  background-color: $white;
+  border: 1px solid rgba(46, 89, 101, 0.2);
+  padding: 13px 13px 24px;
+  margin-top: -13px;
+  // border-bottom: 0;
+  h2.list-view-filter-title {
+    color: $green-dark;
+    padding: 0;
+    margin: 0 0 16px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .type-ahead-search-bar-container {
+    width: 100%;
+  }
+
+  .filter-fields {
+
+    .keywords-field, .hiring-client-field {
+      padding-right: 30px;
+    }
+
+    label {
+      font-size: 13px;
+      margin-bottom: 0px;
+      width: 100%;
+      color: $green-dark;
+      font-weight: 500;
+    }
+
+    input, select, textarea {
+      color: $grey-dark-extra;
+      padding: 6px 5px;
+      font-size: 12px;
+      width: 100%;
+      border-radius: 3px;
+      border: 1px solid $grey-extra-light;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background: transparent;
+    }
+
+    .select-wrapper:after {
+      border-top: 6px solid $grey-medium-light;
+    }
+
+    select {
+      padding: 7px 5px;
+      font-style: italic;
+      color: $grey-dark-extra;
+    }
+
+    input::placeholder {
+      color: $grey-extra-light;
+      font-style: italic
+    }
+
+    button.filter-bn {
+      margin-left: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 13px;
+      padding: 5px 9px;
+      border: 1px solid $grey-dark;
+      color: #fff;
+      margin-top: 24px;
+      font-family: 'Ubuntu';
+      background-color: $green-prequal;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+  }
+}

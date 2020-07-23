@@ -1,0 +1,62 @@
+@import "../../../assets/sass-variables/_colors";
+
+.type-ahead-search-form {
+  display: flex;
+
+  .type-ahead-search-input {
+    &-removable {
+      display: flex;
+      align-items: center;
+
+      .search-removable {
+        margin: 0px 40px 0px 40px
+      }
+    }
+
+    .type-ahead-search-bar-container {
+      margin: 0 0 0 20px;
+      width: 250px;
+
+      .type-ahead-search-bar {
+        padding: 0;
+
+        &.focused {
+          border-radius: 5px 0px 0px 5px;
+        }
+
+        .input-container {
+          border-radius: 5px 0px 0px 5px;
+          padding: 7px 30px 7px 25px;
+        }
+      }
+    }
+
+    .input-group {
+      height: 40px;
+
+      .form-control {
+        border-radius: 0;
+        height: initial;
+
+        &::placeholder {
+          color: $grey-dark;
+          font-size: 14px;
+        }
+      }
+
+      .input-group-append {
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(0,0,0,.15);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: $green-prequal;
+        cursor: pointer;
+
+        .icon-search_icon::before {
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+export const SET_HC_ID = 'SET_HC_ID';

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="44px" viewBox="0 0 51 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Admin:-Users-&gt;-List:-Filter" transform="translate(-25.000000, -16.000000)">
+            <g id="sidebar" transform="translate(-2.000000, 0.000000)">
+                <g id="logo" transform="translate(27.000000, 16.000000)">
+                    <path d="M3.6911315,39.5634638 L3.6911315,9.29062871 C3.6911315,8.87307236 4.05504587,8.5599051 4.41896024,8.5599051 L9.56574924,8.5599051 C8.73394495,9.34282325 8.11009174,10.3345196 8.11009174,11.4827995 L25.8899083,11.4827995 C25.8899083,10.3345196 25.266055,9.34282325 24.4342508,8.5599051 L29.5810398,8.5599051 C29.9969419,8.5599051 30.3088685,8.9252669 30.3088685,9.29062871 L30.3088685,11.3784104 L30.3088685,11.5349941 L30.3088685,18.0071174 L34,18.0071174 L34,11.5349941 L34,11.3784104 L34,9.29062871 C34,6.83748517 32.0244648,4.85409253 29.5810398,4.85409253 L21.9908257,4.85409253 C21.9388379,2.13997628 19.7033639,0 17,0 C14.2966361,0 12.0611621,2.19217082 12.0091743,4.85409253 L4.41896024,4.85409253 C1.97553517,4.85409253 0,6.83748517 0,9.29062871 L0,39.5634638 C0,42.0166074 1.97553517,44 4.41896024,44 L15.7003058,44 L15.7003058,40.2941874 L4.41896024,40.2941874 C4.05504587,40.346382 3.6911315,39.9810202 3.6911315,39.5634638 Z M17,2.92289442 C18.1437309,2.92289442 19.0275229,3.8623962 19.0275229,4.95848161 C19.0275229,6.10676157 18.0917431,6.9940688 17,6.9940688 C15.8562691,6.9940688 14.9724771,6.05456702 14.9724771,4.95848161 C14.9724771,3.8623962 15.9082569,2.92289442 17,2.92289442 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <ellipse id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="8.2075" cy="16.62" rx="1" ry="1.14"></ellipse>
+                    <path d="M11.3575,16.62 L27.8425,16.62" id="Shape" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+                    <ellipse id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="8.2075" cy="23.32" rx="1" ry="1.14"></ellipse>
+                    <path d="M11.3575,23.32 L27.8425,23.32" id="Shape" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+                    <ellipse id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="8.2075" cy="29.62" rx="1" ry="1.14"></ellipse>
+                    <path d="M11.3575,29.62 L27.8425,29.62" id="Shape" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+                    <ellipse id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="8.2075" cy="36.38" rx="1" ry="1.14"></ellipse>
+                    <path d="M11.3575,36.38 L27.8425,36.38" id="Shape" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M19.9795918,43 C19.9795918,43 34.8176871,20.0115069 51,17.02866 C51,17.02866 34.7659864,15.7943785 22.6163265,29.5257602 L19.7727891,20.7829329 L13,22.6343551 L19.9795918,43 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

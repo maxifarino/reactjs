@@ -1,0 +1,42 @@
+@import "../../../../assets/sass-variables/_colors";
+
+.change-status-modal {
+
+  .first-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .change-status-modal-header {
+    color: $white;
+    font-size: 20px;
+  }
+
+  .change-status-content {
+    font-size: 15px;
+    padding: 30px 50px;
+
+    .statusContainer {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      label {
+        color: #2E5965;
+        font-weight: 500;
+        margin-right: 20px;
+      }
+
+      select {
+        height: 32px;
+      }
+    }
+
+    .action-button {
+      margin-left: 20px;
+    }
+
+  }
+}

@@ -1,0 +1,123 @@
+.locationEditorModal {
+
+  .modal-dialog {
+    max-width: 50%;
+    width: 50%;
+  }
+
+  .modal-body {
+    padding: 0 !important;
+    margin: 0;
+    //border: 2px solid #7ED0BC;
+  }
+
+  header {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #7ED0BC;
+
+    .noteEditorTitle {
+      color: #305866;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+
+  .location {
+    float: left !important;
+  }
+
+  .chckbxLabel {
+    float: right !important;
+    width: 100% !important;
+  }
+
+  .floatRight {
+    float: right !important;
+  }
+
+  .noteForm {
+    margin: 0;
+    padding: 25px 30px 40px 30px;
+
+    .filter-fields label {
+      color: #6c8994;
+    }
+    // .filter-fields input {
+    //   height: 32px;
+    // }
+    .filter-fields select {
+      height: 32px;
+    }
+    .filter-fields textarea {
+      height: 140px;
+      resize: none;
+    }
+
+    // .filter-fields input.chkbx {
+    //   height: 1px !important;
+    //   width: 1px !important;
+    //   padding: 0 !important;
+    //   border-radius: 0 !important;
+    //   margin: 0 !important;
+    // }
+
+    .admin-form-field-wrapper {
+      margin-top: 15px;
+    }
+
+    .pad-left {
+      padding-left: 20px;
+    }
+    .pad-right {
+      padding-right: 20px;
+    }
+
+    span.field-validation-message {
+      right: 22px;
+      top: 22px;
+    }
+
+    // span.select-error-message {
+    //   top: 8px !important;
+    // }
+
+    .select-wrapper select.invalid {
+      border-color: #FF0000;
+    }
+
+    .noteEditorButtons {
+      justify-content: flex-end;
+      display: inline-flex;
+      width: 100%;
+      height: 45px;
+      margin-top: 45px;
+      padding: 0;
+
+      button, a {
+        border-radius: 6px;
+        border-bottom: 4px solid #305866;
+        text-transform: uppercase;
+      }
+
+      a {
+        padding: 12px 25px;
+        color: white;
+        font-size: 13px;
+        display: inline-block;
+        margin-right: 15px;
+        cursor: pointer;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+
+  }
+
+}

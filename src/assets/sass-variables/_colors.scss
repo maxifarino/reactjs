@@ -1,0 +1,56 @@
+$white: #FFFFFF;
+$black: #000;
+$red: #FF0000;
+
+$blue: #34ACFE;
+$blue-light: #5ECEFF;
+$blue-dark: #3F81FE;
+$blue-lighter: #9EDEF8;
+$blue-prequal: #085DAD;
+
+$grey-dark-extra: #4E4E4E;
+$grey-dark: #8D959A;
+$grey-medium: #666666;
+$grey-medium-light: #A3A1AA;
+$grey-medium-lighter: #BABBBD;
+$grey-light: #D1D8E5;
+$grey-extra-light: #CFCFD0;
+$grey-super-light: #D6D7D6;
+$grey-bg: #E3E7EF;
+$grey-bg-light: #F2FAF8;
+$grey-white: #F7F7F7;
+$grey: #EFEFEF;
+
+$grey-tab: #D5DEE0;
+$grey-tab-selected: #F2F5F5;
+
+$grey-brown: #A6A09E;
+
+$pink-light:  #EF6B8B;
+$pink: #EA5071;
+
+$yellow-light: #FDB512;
+$yellow: #EA8856;
+
+$sky-blue-light: #7ED0BC;
+$sky-blue: #29AEA2;
+
+$green-dark: #2E5965;
+$green-darker: #1d3a42;
+$grey-green: #60818A;
+$green-light: #7ED0BC;
+$green-very-light: #F3FBF9;
+$green-prequal: #8CC739;
+
+$bg-blue-gradient: linear-gradient(to bottom right, $blue-light, $blue);
+$bg-pink-gradient: linear-gradient(to bottom right, $pink-light, $pink);
+$bg-yellow-gradient: linear-gradient(to bottom right, $yellow-light, $yellow);
+$bg-sky-blue-gradient: linear-gradient(to bottom right, $sky-blue-light, $sky-blue);
+$bg-sky-blue-straight-gradient: linear-gradient(to right, $sky-blue-light, $sky-blue);
+$bg-green-dark-gradient: linear-gradient(to bottom right, $grey-green, $green-dark);
+
+// colors with opacity
+
+$grey-table: rgba(46, 89, 101, 0.2);
+$grey-selected-cta: rgba(41, 174, 162, 0.3 );
+$grey-medium-opacity: rgba(255, 255, 255, 0.5);

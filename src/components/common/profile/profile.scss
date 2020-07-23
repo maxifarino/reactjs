@@ -1,0 +1,152 @@
+@import "../../../assets/sass-variables/_colors";
+
+.profile-body {
+  // background: $grey-bg-light;
+}
+
+.profile-view-wrapper {
+  background: $grey-bg-light;
+  padding: 5px 0;
+}
+
+.profile-column-inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 35px 0 35px 10px;
+  background: $white;
+  padding: 10px;
+
+  &.profile-sidebar {
+    .profile-sidebar-content {
+      width: 100%;
+      display: flex;
+    }
+  }
+
+  &.profile-main {
+    margin-left: 10px;
+    padding: 0;
+  }
+}
+
+.profile-sidebar {
+  box-shadow: 0px 0px 2px 1px #4aad98;
+  padding: 23px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  section.sidebar-header {
+    display: flex;
+    align-items: center;
+
+    .logo-wrapper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .logo {
+      //height: 70px;
+      //width: 200px;
+      max-width: 350px;
+      max-height: 170px;
+      width: auto;
+      height: auto;
+    }
+
+    .phone {
+      font-size: 11px;
+      font-weight: 100;
+      color: $grey-dark-extra;
+    }
+
+    .link {
+      margin-bottom: 5px;
+      a {
+        font-size: 11px;
+        position: relative;
+        top: -7px;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  section.sidebar-section {
+    display: flex;
+    flex-wrap: wrap;
+
+    h3 {
+      font-size: 15px;
+      color: $green-dark;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    .sidebar-item {
+      margin-top: 5px;
+      span {
+
+        &.item-label {
+          color: $grey-medium-light;
+          font-size: 11px;
+          font-weight: 100;
+          margin-right: 5px;
+        }
+        &.item-value {
+          font-size: 14px;
+          font-weight: 500;
+          color: $grey-dark-extra;
+        }
+      }
+    }
+  }
+
+  .sidebar-button {
+    background-color: $green-prequal;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 35%;
+  }
+}
+
+.profile-tabs {
+  &.nav-tabs {
+    background: $grey-tab;
+    border-bottom: 0;
+
+    .tab-item {
+      display: flex;
+
+      .tab-button {
+        background: $grey-tab;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 23px 18.5px 21px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+
+        &.active {
+          background: $blue-prequal;
+          color: $white;
+        }
+
+        &:hover {
+          background: $green-prequal;
+          color: $white;
+        }
+      }
+    }
+
+  }
+}

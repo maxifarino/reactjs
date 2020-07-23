@@ -1,0 +1,17 @@
+@import '../../../../../assets/sass-variables/colors';
+
+.project-requirements-list {
+  .project-requirements-list-header {
+    margin-bottom: 40px;
+
+    .col-md-6 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .set-title {
+        color: $green-dark;
+      }
+    }
+  }
+}

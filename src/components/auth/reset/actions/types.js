@@ -1,0 +1,2 @@
+export const SET_PASSWORDS = 'SET_PASSWORDS';
+export const SET_ERROR_RESET = 'SET_ERROR_FORGOT';

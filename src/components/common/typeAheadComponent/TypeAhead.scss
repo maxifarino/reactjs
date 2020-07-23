@@ -1,0 +1,108 @@
+.type-ahead-search-bar-container {
+  position: relative;
+  max-width: 100%;
+  width: 370px;
+  height: 40px;
+  margin: 0 10px 0 10px;
+}
+
+.type-ahead-search-bar {
+  width: 100%;
+  padding: 0 35px;
+  position: absolute;
+
+  .searchResults {
+    display: flex;
+    padding: 8px 20px 8px 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba($color: grey, $alpha: 0.5)
+    }
+  }
+
+  .input-container {
+    border-radius: 5px;
+    background-color: rgba(256,256,256,0.2);
+    padding: 8px 30px 8px 25px;
+    position: relative;
+
+    input {
+      outline: none;
+      border: none;
+      overflow: hidden;
+      background-color: transparent;
+      font-size: 13px;
+      width: 90%;
+    }
+
+    svg {
+      color: rgba(1,1,1,0.38);
+      position: absolute;
+      top: 12px;
+    }
+  }
+
+  .results-container {
+    padding: 0 14px;
+
+    .spinner-wrapper {
+      margin: 0 0 10px 0;
+    }
+    .user-container {
+      margin-bottom: 10px;
+      .img-border {
+        width: 34px;
+        height: 34px;
+      }
+      .img-container {
+        .profile-initials,
+        .profile-picture {
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 15px;
+        }
+      }
+      .basic-info {
+        display: flex;
+        flex-direction: row;
+        height: 34px;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 30px;
+        width: 100%;
+        justify-content: space-between;
+        .name {padding-right: 5px;}
+        .role {text-align: right;}
+        .name,.role {
+          font-size: 13px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+
+  .grey-border {
+    border: 1px solid rgba(112,112,112,0.2);
+  }
+}
+
+.type-ahead-search-bar.focused {
+  border-radius: 5px;
+  border: 1px solid #CCCCCC;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 20px;
+  padding: 0;
+  z-index: 6;
+
+  .input-container {
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: transparent;
+  }
+  .grey-border {
+    border: none;
+  }
+}

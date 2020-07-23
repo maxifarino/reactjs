@@ -1,0 +1,59 @@
+@import "../../../assets/sass-variables/_colors";
+
+.wiz-wrapper {
+  header.small {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.projects-list {
+  .projects-list-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  .projects-table {
+    table > tbody > tr {
+      & > td:nth-child(3) {
+        line-height: initial;
+      }
+
+      & > td:nth-child(6) {
+        line-height: initial;
+      }
+    }
+
+    .status-cell {
+      &.inprogress::before {
+        color: orange;
+      }
+
+      &.completed::before {
+        color: #29AEA2;
+      }
+
+      &.unassigned::before {
+        color: red;
+      }
+    }
+  }
+}
+
+.archived-text {
+  color: '#73777d';
+}
+
+.copyToClip {
+  color: $green-prequal;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

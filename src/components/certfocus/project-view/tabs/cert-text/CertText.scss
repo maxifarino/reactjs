@@ -1,0 +1,15 @@
+.project-cert-text {
+  .cert-text-form {
+    textarea {
+      border: 2px solid red;
+      min-height: initial !important;
+    }
+
+    .error-item-form {
+      width: initial;
+      display: block;
+      position: relative;
+      margin-top: 0;
+    }
+  }
+}

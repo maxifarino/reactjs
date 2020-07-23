@@ -1,0 +1,53 @@
+@import "../../../../assets/sass-variables/colors";
+
+.view-task-modal {
+  box-shadow: 1px 1px 3px $green-light, -1px -1px 3px $green-light;
+
+  .first-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .view-task-modal-header {
+    background-color: $green-dark;
+    color: $white;
+    font-size: 25px;
+    font-style: italic;
+    height: 80px;
+    padding: 25px;
+  }
+
+  .view-task-content {
+    border: 1px solid $sky-blue;
+    font-size: 15px;
+    padding: 50px;
+
+    .view-task-label {
+      color: $green-dark;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .view-task-text {
+      background-color: $grey;
+      border: none;
+      color: $green-light;
+      font-weight: 500;
+      padding: 7px 10px;
+      margin: 2px 10px 30px 0;
+    }
+
+    .description-text {
+      background-color: $grey;
+      border: none;
+      color: $black;
+      margin: 2px 10px 30px 0;
+      min-height: 200px;
+      padding: 7px 10px;
+    }
+  }
+
+  .action-button {
+    margin-left: 20px;
+  }
+}

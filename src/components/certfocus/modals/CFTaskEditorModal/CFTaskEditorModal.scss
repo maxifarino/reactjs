@@ -1,0 +1,115 @@
+.taskEditor {
+
+  .modal-dialog {
+    max-width: 80%;
+    width: 80%;
+  }
+
+  .modal-content {
+    top: 100px;
+  }
+
+  .modal-body {
+    padding: 0 !important;
+    margin: 0;
+    //border: 2px solid #7ED0BC;
+  }
+
+  header {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #7ED0BC;
+
+    .title {
+      color: #305866;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+
+  .taskForm {
+    margin: 0;
+    padding: 25px 30px 40px 30px;
+
+    .row {
+      min-height: 71px;
+    }
+
+    .filter-fields label {
+      color: #6c8994;
+    }
+
+    .filter-fields input {
+      height: 32px;
+    }
+
+    .filter-fields select {
+      height: 32px;
+    }
+
+    .filter-fields textarea {
+      height: 140px;
+      resize: none;
+    }
+
+    .admin-form-field-wrapper {
+      margin-top: 15px;
+    }
+
+    .pad-left {
+      padding-left: 20px;
+    }
+
+    .pad-right {
+      padding-right: 20px;
+    }
+
+    span.field-validation-message {
+      right: 22px;
+      top: 22px;
+    }
+
+    // span.field-validation-message-select {
+    //   right: 22px;
+    //   top: 22px;
+    // }
+
+    .select-wrapper select.invalid {
+      border-color: #FF0000;
+    }
+
+    .EditorButtons {
+      justify-content: flex-end;
+      display: inline-flex;
+      width: 100%;
+      height: 45px;
+      margin-top: 45px;
+      padding: 0;
+
+      button, a {
+        border-radius: 6px;
+        border-bottom: 4px solid #305866;
+        text-transform: uppercase;
+      }
+
+      a {
+        padding: 12px 25px;
+        color: white;
+        font-size: 13px;
+        display: inline-block;
+        margin-right: 15px;
+        cursor: pointer;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+
+  }
+}

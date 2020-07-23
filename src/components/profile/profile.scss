@@ -1,0 +1,105 @@
+@import "../../assets/sass-variables/_colors";
+
+.user-profile-container {
+  padding: 60px 40px;
+
+  .up-header-info {
+    box-shadow: 0px 0px 2px 1px #4aad98;
+    margin: 0;
+    padding: 15px;
+
+    .up-general-info {
+      border-right: 2px solid #c3e3dc;
+      padding: 0 40px 0 0;
+
+      .up-name-container {
+        width: 100%;
+        border-bottom: 2px solid #c3e3dc;
+        padding: 0 20px 15px 20px;
+
+        .up-full-name {
+          color: $green-dark;
+          font-weight: 600;
+          font-size: 16px;
+        }
+      }
+
+      .up-phone-mail-container {
+        width: 100%;
+        padding: 30px 0;
+      }
+
+      label {
+        color: $grey-medium;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      button {
+        display: block;
+        margin: auto;
+        width: 80%;
+      }
+    }
+
+    .up-hc-sc-info {
+      padding: 10px 60px 10px 50px;
+
+      .row {
+        margin: 0;
+        padding: 10px 0;
+      }
+
+      .up-users-list {
+        height: 185px;
+        overflow-y: scroll;
+      }
+
+      .up-list-title {
+        color: $green-dark;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .up-list-element {
+        color: $grey-medium-light;
+        font-size: 11px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+    }
+
+    button {
+      height: 40px;
+      min-width: 130px;
+      border-radius: 5px;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      background: $bg-sky-blue-gradient;
+      border-bottom-color: #305866;
+      border-bottom-width: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+  }
+
+  .up-activity-container {
+    margin-top: 40px;
+
+    .up-activity-title {
+      padding-bottom: 20px;
+      color: $green-dark;
+      width: 100%;
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}

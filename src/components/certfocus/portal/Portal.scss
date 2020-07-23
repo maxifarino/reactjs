@@ -1,0 +1,49 @@
+@import "../../../assets/sass-variables/colors";
+
+.portal-form-container {
+  header {
+    display: flex;
+    align-items: center;
+    color: $blue-prequal;
+    padding-bottom: 5px;
+    border-bottom: 5px solid $blue-prequal;
+  }
+
+  .portal-url-form {
+    .admin-field-wrapper-file {
+      .files-list > li {
+        list-style: initial;
+      }
+
+      .input-label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 11px 45px;
+        color: white;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: $blue-prequal;
+        border-radius: 3px;
+        line-height: initial;
+
+        &::before {
+          margin-right: 7px;
+          font-weight: normal;
+          color: white;
+        }
+      }
+
+      .field-validation-message {
+        top: 5px !important;
+      }
+    }
+
+    .wiz-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

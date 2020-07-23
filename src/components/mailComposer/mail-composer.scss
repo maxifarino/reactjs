@@ -1,0 +1,132 @@
+@import "../../assets/sass-variables/_colors";
+
+.container-fluid.mail-composer {
+  padding-right: 30px;
+  padding-left: 30px;
+
+  .editor-column {
+    width: 100%;
+  }
+
+  .mailHeader {
+    margin: 15px 0;
+
+    .col-md-6 {
+      padding: 0 30px 0 0;
+    }
+
+    .hcContainer,
+    .subjectContainer,
+    .recipientsContainer,
+    .scContainer,
+    .dueDateContainer,
+    .taskDetailContainer {
+      margin-top: 5px;
+
+      label {
+        width: auto;
+        margin: 0;
+        font-size: 13px;
+        color: #2E5965;
+        font-weight: 500;
+      }
+
+      input {
+        width: 100%;
+        height: 32px;
+        color: #4E4E4E;
+        padding: 6px 5px;
+        font-size: 12px;
+        border-radius: 3px;
+        border: 1px solid #CFCFD0;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background: transparent;
+      }
+
+      .mandatory::after {
+        pointer-events: none;
+        position: relative;
+        float: right;
+        right: -5px;
+        color: red;
+        content: "*";
+      }
+    }
+
+    .hcContainer,
+    .scContainer {
+      select {
+        width: 50%;
+        height: 32px;
+      }
+    }
+
+    .dueDateContainer {
+      input {
+        width: 50%;
+        min-width: 200px;
+      }
+    }
+
+    .recipientsContainer {
+
+      .suggestions-container {
+        position: absolute;
+        background-color: white;
+        z-index: 1;
+        padding: 5px 10px;
+        border: solid 1px lightslategrey;
+
+        .recipientSuggestion {
+          margin: 5px 0
+        }
+      }
+
+      .emails-container {
+        height: auto !important;
+        display: inline-block;
+        margin: 5px 0 0 0;
+        width: 100%;
+
+        .used-email {
+          background: $bg-sky-blue-gradient;
+          color: #FFF;
+          padding-left: 6px;
+          border-radius: 3px;
+          margin-right: 8px;
+          float: left;
+          margin-bottom: 5px;
+          overflow-wrap: break-word;
+          max-width: 500px;
+
+          .clear-email {
+            font-size: 8px;
+            font-weight: bold;
+            position: relative;
+            top:-2px;
+            margin-left: 5px;
+            padding-right: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .mailFooter {
+    height: 80px;
+    width: 100%;
+    background: $bg-sky-blue-gradient;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 150px;
+    margin-top: 20px;
+
+    .footerBtn {
+      min-width: 200px;
+      text-transform: uppercase;
+    }
+  }
+}

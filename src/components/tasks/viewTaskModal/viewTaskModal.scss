@@ -1,0 +1,63 @@
+@import "../../../assets/sass-variables/_colors";
+
+.view-task-modal {
+  // box-shadow: 1px 1px 3px $green-light, -1px -1px 3px $green-light;
+  .suspended {
+    position: absolute;
+    z-index: 100px
+  }
+
+  .first-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .view-task-modal-header {
+    background-color: #7ED0BC !important;
+    color: #305866 !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    height: 60px !important;
+    padding: 25px !important;
+  }
+
+  .view-task-content {
+    // border: 1px solid $sky-blue;
+    font-size: 15px;
+    padding: 50px;
+
+    .view-task-label {
+      color: #6c8994 !important;
+      font-size: 13px !important;
+    }
+
+    .view-task-text, .description-text {
+      background-color: white !important;
+      border: 0.5px solid lightgray !important;
+      border-radius: 3px !important;
+      color: $black !important;
+      padding: 7px 10px;
+      margin: 2px 10px 30px 0;
+      font-size: 13px !important;
+    }
+
+    .normalFontWeight {
+      font-weight: normal !important;
+    }
+
+    .description-text {
+      margin: 2px 10px 30px 0;
+      min-height: 200px;
+      padding: 7px 10px;
+    }
+  }
+
+  .action-button {
+    margin-left: 20px;
+  }
+  button, a {
+    border-radius: 6px !important;
+    border-bottom: 4px solid #305866 !important;
+    text-transform: uppercase !important;
+  }
+}

@@ -1,0 +1,177 @@
+@import "../../../../../assets/sass-variables/colors";
+
+.workflow-table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 2px;
+    border-color: grey;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.col-th-wrapper{
+    color: #2E5965;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 9px 11px;
+    letter-spacing: 0.5px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.center-table{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.workflow-wrapper{
+    margin-top: 20px;
+    margin-top: 50px;
+}
+
+.type {
+    overflow-wrap: break-word;
+    width: 300px;
+}
+
+.description {
+    overflow-wrap: break-word;
+    width: 360px;
+}
+
+.edit-workflow-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.workflow-components a{
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.table-with-pagination {
+    padding-bottom: 25px;
+}
+
+.right-buttons {
+    margin-left: 271px;
+    width: 335px;
+    display: inline-block;
+}
+
+.workflow-title {
+    font-weight: bolder;
+    font-size: 20px;
+    color: #305866;
+    border-bottom: 3px solid $green-light;
+}
+
+.buttons-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.workflow-button {
+    background: linear-gradient(to bottom right, $grey-green, $green-dark);
+    color: white;
+}
+
+.workflow-button:hover {
+    color: white;
+}
+
+.button-text {
+    margin-left: 2px;
+}
+
+.workflow-components {
+    background: #f3f3f3;
+    margin-top: 20px;
+    //padding-top: 20px;
+    //padding-bottom: 20px;
+
+    .cell {
+      justify-content: center;
+      min-height: 80px;
+      display: inline-flex;
+      align-items: center;
+      padding: 0px;
+      border-bottom: 2px dashed #979797;
+    }
+    .cell.dashed-border-left {
+      border-left: 2px dashed #979797;
+    }
+}
+
+.component-title {
+    color: #305866;
+    text-align: center;
+    font-weight: bold;
+}
+
+.component-row {
+    margin: 0 !important;
+
+    .component-line-id {
+      color: #7ED0BC;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .component-select {
+      width: 100%;
+      margin: 10% 15%;
+    }
+
+    .parameters-row {
+      width: 100%;
+      padding: 15px;
+      align-items: center;
+
+      .parameter-col {
+        padding: 0;
+
+        .parameter-name {
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .param-select {
+          width: 100%;
+        }
+      }
+    }
+}
+
+.possbile-value-select {
+    width: 300px;
+    text-overflow: ellipsis;
+}
+
+.add-component-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+
+  .add-component-btn {
+    height: 40px;
+    min-width: 130px;
+    border-radius: 5px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: #29AEA2;
+    border-bottom-color: #305866;
+    border-bottom-width: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 20px;
+  }
+}

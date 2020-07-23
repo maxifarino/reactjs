@@ -1,0 +1,19 @@
+@import '../../../../assets/sass-variables/colors';
+
+.hc-profile-forms-modal {
+  .discrete-acounts-modal-header {
+    border-bottom: 1px solid $green-dark;
+    padding-bottom: 5px;
+
+    .discrete-acounts-modal-header-title {
+      color: $green-dark;
+      font-weight: bold;
+    }
+  }
+
+  .hide-scorecards-fields-modal-field {
+    color: $green-dark;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}

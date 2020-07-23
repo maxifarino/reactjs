@@ -1,0 +1,39 @@
+@import '../../../assets/sass-variables/colors';
+
+.projectInsureds-list {
+  table th {
+    white-space: nowrap;
+  }
+
+  .compliance-status {  
+    border-radius: 0.8em;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1em;
+    height: 1em;
+    
+    &.compliant {
+      background-color: $green-prequal;
+    }
+    &.minor {
+      background-color: #FEEC0F;
+    }
+    &.non-compliant {
+      background-color: #f04c41;
+    }
+    &.escalated {
+      background-color: #FEAB0F;
+    }
+    &.pending {
+      background-color: lightgray;
+    }
+    &.on-hold {
+      background-color: #2BAFF4;
+    }
+  }
+}
+

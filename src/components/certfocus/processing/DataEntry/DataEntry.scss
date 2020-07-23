@@ -1,0 +1,95 @@
+@import '../../../../assets/sass-variables/colors';
+
+.data-entry-form {
+  input[name=documentFile] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  label[for=documentFile] {
+    cursor: pointer;
+    border: 2px dashed $sky-blue;
+    text-align: center;
+    padding: 235px 0px 235px;
+  }
+
+  [name=documentFile] + span.field-validation-message {
+    top: 10px !important;
+    left: 25px !important;
+    right: auto !important;
+  }
+
+  section.border {
+    &:first-child {
+      border: 1px solid rgba(0,0,0,.2)
+    }
+
+    &:not(:first-child) {
+      border: 1px solid rgba(0,0,0,.2);
+      border-top: none;
+    }
+  }
+
+  .upload-file-wrapper {
+    text-align: center;
+    min-height: 100%;
+
+    label {
+      color: white !important;
+      background-color: darkslategrey;
+    }
+  }
+
+  .coverages-section {
+    button {
+      cursor: pointer;
+    }
+
+    .attribute-row {
+      & > div {
+        color: $green-dark;
+        font-weight: bold;
+      }
+    }
+
+    .attributes-section {
+      .row {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .insurers-section {
+    button {
+      cursor: pointer;
+    }
+  }
+
+  .agency-section {
+    .agency-data {
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  .insured-section {
+    .insured-data {
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .fileViewer {padding-top: 15px;}
+  }
+}

@@ -1,0 +1,114 @@
+@import "../../../../../assets/sass-variables/_colors";
+
+.processing-preview-screen-container {
+  .missing-data-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .entity-info-form {
+    padding: 0px;
+
+    .filter-form-field-wrapper {
+      display: inline-flex;
+      margin-right: 15px;
+      padding: 3px;
+
+      label {
+        margin-bottom: 0;
+        margin-right: 10px;
+        padding-top: 5px;
+        color: $green-dark;
+        font-weight: bold;
+      }
+
+      .form-removable-container {
+        .value-container {
+          width: 250px;
+        }
+      }
+
+      .field-validation-message {
+        display: none;
+      }
+
+      .type-ahead-search-bar-container {
+        margin: 0 0 0 20px;
+        width: 250px;
+
+        .type-ahead-search-bar {
+          padding: 0;
+
+          &.focused {
+            border-radius: 5px 5px 5px 5px;
+          }
+
+          .input-container {
+            border-radius: 5px 5px 5px 5px !important;
+            padding: 7px 30px 7px 25px !important;
+          }
+        }
+      }
+    }
+  }
+
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  input[type="text"] {
+    display: block;
+    width: 100%;
+    //height: calc(1.5em + .75rem + 2px);
+    padding: .175rem .35rem;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;    
+  }
+  .sm-input {
+    width: 120px !important;
+  }
+  label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2E5965;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+
+  h2 {
+    color: $green-dark;
+    padding: 0;
+    margin: 0 0 16px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .buttons-section {
+    background-color: darkslategray;
+    padding: 6px;
+    justify-content: center;
+  }
+}
+
+.add-item-modal {
+  .modal-content {
+    top: 0px !important;
+    margin-bottom: 30px;
+    .modal-body {
+      padding: 5px 20px 20px;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import '../../../../assets/sass-variables/colors';
+
+.requirement-sets-details-container {
+  .header {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .requirement-condition {
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .requirements-icons > span {
+    cursor: pointer;
+  }
+
+  .requirements-groups {
+    & > div:first-child > .card {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    & > div:not(:first-child):not(:last-child) > .card {
+      border-radius: 0;
+      border-top: none;
+    }
+
+    & > div:last-child > .card {
+      border-top: none;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+
+  .file-attachment-card-block {
+    padding: 0.75rem;
+
+    .attachments-icons > span {
+      font-size: 24px;
+      cursor: pointer;
+
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  h4, h5, strong {
+    color: $green-dark;
+  }
+
+  .card {
+    -webkit-box-shadow: rgba(46, 89, 101, 0.1) 0px 0px 5px;
+    box-shadow: rgba(46, 89, 101, 0.1) 0px 0px 5px;
+  }
+}
+
+.attachment-form-modal {
+  .admin-field-wrapper-file {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 11px 45px;
+      color: white;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      &::before {
+        margin-right: 7px;
+        font-weight: normal;
+        color: white;
+      }
+    }
+
+    & > div > span {
+      position: relative;
+      top: 0;
+    }
+  }
+}

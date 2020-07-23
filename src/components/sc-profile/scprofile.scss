@@ -1,0 +1,242 @@
+@import "../../assets/sass-variables/_colors";
+
+.projects-list {
+  .limitedWidthText {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.scprofile-container {
+  padding: 30px 40px;
+
+  .scprofile-tabs {
+    background-color: #e8edee;
+    margin-top: 30px;
+  }
+
+  .sc-header-info {
+    box-shadow: 0px 0px 2px 1px #4aad98;
+    margin: 0;
+    padding: 15px;
+
+    .sc-general-info {
+      border-right: 2px solid #c3e3dc;
+      padding: 0 40px 0 0;
+
+      .sc-name-container {
+        width: 100%;
+        border-bottom: 2px solid #c3e3dc;
+        color: $green-dark;
+        font-weight: 600;
+        padding: 0 20px 15px 20px;
+        text-align: center;
+      }
+
+      .sc-address-container {
+        width: 100%;
+        padding: 30px 0;
+        label {
+          color: $grey-medium;
+          text-align: center;
+          width: 100%;
+          margin: 0;
+          font-size: 13px;
+          font-weight: 500;
+        }
+      }
+
+      button {
+        display: block;
+        margin: auto;
+        width: 80%;
+      }
+    }
+
+    .sc-financial-info {
+      padding: 10px 60px 10px 50px;
+
+      .row {
+        margin: 0;
+        padding: 5px 0;
+      }
+      .thinRow {
+        margin: 0;
+        padding: 0;
+      }
+      .rowAbove {
+        margin: 0;
+        padding-bottom: 0 !important;
+      }
+      .rowBelow {
+        margin: 0;
+        padding-top: 0 !important;
+      }
+
+      .sc-financial-value {
+        color: $green-dark;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .sc-financial-label {
+        color: $grey-medium-light;
+        font-size: 11px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+    }
+
+    button {
+      height: 40px;
+      min-width: 130px;
+      border-radius: 5px;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      background: $bg-sky-blue-gradient;
+      border-bottom-color: #305866;
+      border-bottom-width: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .change-status-btn {
+      height: 30px;
+      min-width: 100px;
+      background: none;
+      background-color: #8CC739;
+      border: 1px solid #2E5965;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .no-margin-left {
+      margin-left: 0 !important;
+    }
+  }
+}
+
+.files-filter-form {
+  background-color: $white;
+
+  .field-validation-message {
+    right: 38px;
+    top: 6px;
+  }
+}
+
+.download-file {
+  .spinner-wrapper {
+    margin-top: 0;
+    width: 54.5px;
+  }
+}
+
+.changeHcSelect {
+  margin: 0;
+  padding: 0;
+
+  select {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background: transparent;
+      border-radius: 3px;
+      border: 1px none $grey-extra-light;
+      color: $grey-dark-extra;
+      font-size: 12px;
+    }
+    option {
+    color: $green-dark;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.rowHeight {
+  height: 35px !important;
+}
+
+.lineHeight {
+  line-height: 28px !important;
+}
+
+.noBottomMarPad {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.noTopMarPad {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.noTopBottomMarPad {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.labelPad {
+  padding-right: 5px;
+}
+
+.specialSelect {
+  line-height: 25px;
+  float: right !important;
+  width: 142px !important;
+  color: $green-dark;
+  font-size: 14px;
+  font-weight: 500;
+  &:after {
+    left: 120px !important;
+    top: 10px !important;
+  }
+}
+
+
+.hcSelect {
+  width: 100% !important;
+}
+
+.sc-financial-recommend {
+  color: $red;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 2px !important;
+  text-transform: uppercase;
+}
+
+.notice {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  // margin-left: 20%;
+}
+
+.rightCol {
+  margin-left: 80px !important;
+}
+
+.rightCol2 {
+  margin-left: 40px !important;
+}
+
+.profileBtn {
+  width: 150px !important;
+}
+
+.editBtn {
+  content: "Edit";
+  color:blue;
+  // width: 30% !important;
+  // height: 30% !important;
+}

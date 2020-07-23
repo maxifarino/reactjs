@@ -1,0 +1,224 @@
+@import '../../../assets/sass-variables/colors';
+
+.holder-requirement-sets-list-view {
+  .back-to-header {
+    margin-bottom: 15px;
+  }
+
+  .holder-requirement-sets-list-view-header {
+    .list-data {
+      strong {
+        color: $green-dark;
+      }
+    }
+
+    .list-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+  }
+  
+  .requirements-groups {
+    & > div:first-child > .card {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    & > div:not(:first-child):not(:last-child) > .card {
+      border-radius: 0;
+      border-top: none;
+    }
+
+    & > div:last-child > .card {
+      border-top: none;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+
+  h4, h5, strong {
+    color: $green-dark;
+  }
+
+  .attachments-icons > span,
+  .endorsements-icons > span {
+    font-size: 24px;
+    cursor: pointer;
+    vertical-align: middle;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+
+  a {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $green-dark;
+
+    &.cell-table-link {
+      color: $green-prequal !important;
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+      &:before {
+        color: $green-prequal;
+        position: absolute;
+        top: 1px;
+        left: -16px;
+      }
+    }
+  }
+  
+  .coverages-table {
+    //border-collapse: collapse;
+    width: 100%;
+  }
+
+  .coverages-headers {
+    background-color: #2E5965;
+    color: #eee;
+    font-weight: 500;
+    font-size: small;
+    white-space: nowrap;
+    padding: 3px;
+    text-align: left;
+  }
+
+  .coverages-attr-headers {
+    color: #2E5965;
+    font-weight: 500;
+    font-size: small;
+    white-space: nowrap;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .compliance-status {
+    font-weight: 400;
+    font-size: xx-large;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    height: 120px;
+    padding-top: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+    &.compliant {
+      background-color: $green-prequal;
+    }
+    &.non-compliant {
+      background-color: #f04c41;
+    }
+    &.escalated {
+      background-color: #FEAB0F;
+    }
+    &.minor {
+      padding-top: 10px;
+      background-color: #FEEC0F;
+    }
+    &.on-hold {
+      background-color: #2BAFF4;
+    }
+  }  
+  
+  .def-checkbox {
+    height: 22px !important;
+    width: 18px !important;
+    vertical-align: bottom;
+  }
+}
+
+.requirements-icons > span {
+  cursor: pointer; }
+
+
+.layers-table {
+  overflow-y: auto;
+  height: 346px;
+
+  a {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $green-dark;
+
+    &.cell-table-link {
+      color: $green-prequal !important;
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+      &:before {
+        color: $green-prequal;
+        position: absolute;
+        top: 1px;
+        left: -16px;
+      }
+    }
+  }
+}
+
+.layers-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.layers-table table th {
+  background-color: #2E5965;
+  color: #eee;
+  padding: 8px 16px;
+}
+
+.layers-table table td {
+  padding: 8px 16px;  
+}
+
+.layers-table th {
+  position: sticky;
+  top: 0;
+  background: #eee;
+}
+
+.attributes-status {    
+  border-radius: 0.8em;
+  color: #f04c41;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 15px;
+  text-align: center;
+  width: 1em;
+  height: 1em;
+  
+  &.non-submitted,
+  .rejected,
+  .expired {
+    background-color: #f04c41;
+  }
+  &.pending {
+    background-color: lightgray;
+  }
+  &.accepted,
+  .waived,
+  .exempt {
+    background-color: $green-prequal;
+  }
+  &.minor {
+    background-color: #FEEC0F;
+  }
+  &.escalated {
+    background-color: #FEAB0F;
+  }
+}

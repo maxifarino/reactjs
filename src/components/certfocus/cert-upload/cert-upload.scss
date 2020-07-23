@@ -1,0 +1,90 @@
+.holder-logo {
+  max-width: 200px;
+  max-height: 150px;
+}
+
+.dropzone {  
+  position: 'relative';
+  width: '200px';
+  height: '200px';
+  border-width: '2px';
+  border-color: 'rgb(102, 102, 102)';
+  border-style: 'dashed';
+  border-radius: '5px';
+  background: '#4982de' 
+}
+
+.comments-textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.requirement-sets-table {
+  overflow-y: auto;
+  height: 250px;
+}
+
+.attachments-table,
+.endorsements-table {
+  overflow-y: auto;
+  height: 116px;
+}
+
+.documents-table {
+  overflow-y: auto;
+  height: 346px;
+}
+
+.documents-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.requirement-sets-table table th,
+.attachments-table table th,
+.endorsements-table table th,
+.documents-table table th {
+  background-color: #2E5965;
+  color: #eee;
+  padding: 8px 16px;
+}
+
+.requirement-sets-table table td,
+.attachments-table table td,
+.endorsements-table table td,
+.documents-table table td {
+  padding: 8px 16px;
+
+  a {
+    color: #085DAD;    
+  }
+}
+
+.requirement-sets-table th,
+.attachments-table th,
+.endorsements-table th,
+.documents-table th {
+  position: sticky;
+  top: 0;
+  background: #eee;
+}
+
+.small-input {
+  width: 100%;
+}
+
+.explanatory-text {
+  color: red;
+  font-size: 17px;
+
+  a {
+    color: red;
+    font-weight: 500;
+    text-decoration: underline;
+    &:hover {
+      color: red;
+    }
+  }
+}

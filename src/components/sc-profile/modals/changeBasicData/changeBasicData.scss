@@ -1,0 +1,62 @@
+@import "../../../../assets/sass-variables/_colors";
+
+.change-basic-data-modal {
+
+  .first-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .change-status-modal-header {
+    color: $white;
+    font-size: 20px;
+  }
+
+  .change-status-content {
+    font-size: 15px;
+    padding: 30px 50px;
+
+    .statusContainer {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 40px;
+
+      label {
+        color: #2E5965;
+        font-weight: 500;
+        margin-right: 20px;
+      }
+
+      .sc-fields-list {
+        text-align: center;
+
+        .sc-row-field-wrapper {
+          text-align: left;
+          width: 30%;
+
+          input {
+            border-radius: 2px;
+            border: 1px solid #CFCFD0;
+            color: #4E4E4E;
+            display: inline-block;
+            font-size: 12px;
+            width: 100%;
+          }
+
+          .field-validation-message {
+            right: 16px;
+            top: 73px;
+          }
+        }
+      }
+
+    }
+
+    .action-button {
+      margin-left: 20px;
+    }
+
+  }
+}

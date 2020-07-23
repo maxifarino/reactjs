@@ -1,0 +1,317 @@
+@import "../../assets/sass-variables/_colors";
+
+.add-item-modal.add-sc .modal-dialog {
+  max-width: 89.9%;
+}
+
+.add-sc-modal {
+  header {
+    background: $green-dark;
+    margin-bottom: 40px;
+    text-align: center;
+    h1 {
+      color: $white;
+      font-size: 19px;
+      font-weight: 400;
+      text-transform: uppercase;
+
+    }
+    padding: 40px;
+  }
+  .modalSearchWrapper {
+    width: 100%;
+    position: relative;
+    top: -40px;
+    
+    .searchWrapper {
+      padding: 0 !important;
+      width: 350px;
+      display: inline-block;
+      position: absolute;
+      margin: auto !important;
+      right: 0;
+      left: 0;
+      height: 32px;
+  
+      .searchBtn {
+        background-color: $green-prequal;
+        border-style: none;
+        color: white;
+        float: right;      
+        margin-top: 4px;
+        height: 32px;
+        width: 70px !important;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+      .searchBtn:active {
+        background-color: darkgreen;
+      }
+      .search_subcontractors {
+        color: #4E4E4E;
+        padding: 6px 5px;
+        margin-top: 4px;
+        font-size: 12px;
+        height: 32px;
+        width: 280px;
+        border-radius: 3px;
+        border: 1px solid #CFCFD0;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background: white;
+      }
+    }
+  }
+}
+
+label.choose-hc {
+  display: block;
+  color: $grey-medium-opacity;
+  font-size: 14px;
+  font-weight: 200;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+.add-sc-tabs {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline-block;
+    width: 50%;
+    a.addsc-tab-link {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      color: $green-dark;
+      background: $bg-sky-blue-gradient;
+      padding: 10px;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 500;
+      &.active {
+        background: $grey-bg;
+        border: 1px solid $grey-dark-extra;
+        box-sizing: border-box;
+        padding: 9px;
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+.addsc-tab-body .admin-form-field-wrapper {
+  padding-right: 0 !important;
+}
+
+.upload-file-wrapper {
+  text-align: center;
+  margin-bottom: 40px;
+
+  span.field-validation-message {
+    top: 5px !important;
+    right: 180px !important;
+  }
+
+  input[type=file] {
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  label.csv {
+    color: $grey-medium !important;
+    margin-top: 40px;
+    border: 2px dashed #29AEA2;
+    text-align: center;
+    background: $grey-bg;
+    padding: 20px;
+    width: 70% !important;
+    display: inline-block !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    font-style: italic;
+    margin-top: 40px !important;
+    cursor: pointer;
+  }
+}
+
+.addsc-tab-bodies {
+  .tab-body {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+}
+
+.addsc-form-tab-buttons {
+  padding: 50px 35px 40px;
+  text-align: right;
+  a {
+    color: $green-dark;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-right: 20px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  button {
+    text-transform: uppercase;
+    border-bottom: 3px solid $green-dark !important;
+  }
+
+}
+
+.sc-fields-list {
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0;
+    padding: 20px 30px 0px 30px;
+    text-align: center;
+  }
+}
+
+.sc-row-field-wrapper {
+  display: inline-block;
+  width: 15%;
+  padding-right: 15px;
+  position: relative;
+
+  label {
+    margin-bottom: 10px !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    text-align: left !important;
+  }
+
+  input {
+    background: $grey-bg !important;
+    padding: 11px 7px 8px !important;
+  }
+
+  span.error-sc-field {
+    position: absolute;
+    right: 17px;
+    color: red;
+    font-size: 10px;
+  }
+}
+
+#list {
+  align-content: center !important;
+}
+
+.flush {
+  width: 24% !important;
+}
+
+.formItem {
+  display: inline-block;
+  width: 85% !important;
+  // margin: 0% !important;
+  // padding: 0 !important;
+  // float: left;
+  .formSelect {
+    height: 100% !important;
+    padding: 11px 7px 8px !important;
+  }
+}
+
+
+
+.remove-row-button {
+  display: inline-block;
+  position: relative !important;
+  height: 100% !important;
+  width: 15% !important;
+  // margin-left: 2% !important;
+  bottom: -9px !important;
+  float: right;
+}
+
+.upload-file-form {
+  padding-top: 20px;
+}
+
+.sc-fields-list {
+  // width: 1000px;
+  .add-new-sc-row-wrapper {
+    text-align: center;
+    padding-top: 60px;
+    .add-new-sc-row {
+      display: inline-block;
+      width: 60%;
+      color: $sky-blue;
+      background: $grey-bg;
+      border: 2px dashed $sky-blue;
+      padding: 15px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.add-sc-select {
+  position: relative;
+  text-align: center;
+  width: 25%;
+  margin: auto;
+  &.select-wrapper:after {
+    border-top: 6px solid $green-dark;
+    z-index: 2;
+  }
+  select {
+    appearance: none;
+    width: 100%;
+    background: $grey-medium-opacity;
+    border-radius: 2px;
+    border: 1px solid $grey-medium-opacity;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: $green-dark;
+  }
+}
+
+.filter-sc-list {
+  .admin-form-field-wrapper {
+    padding-right: 15px;
+    &.trade-field, &.max-aggregate-field {
+      padding-right: 0;
+    }
+  }
+
+  .sc-filter-row {
+    margin-bottom: 20px;
+  }
+}
+
+.sc-filter-bn {
+  text-align: right;
+  margin-bottom: -20px;
+}
+
+.closeBtn {
+  background-color: $green-prequal;
+  border-style: none;
+  color: white;
+  float: right;      
+  margin-top: 4px;
+  height: 32px;
+  width: 70px !important;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+}
+.closeBtn:active {
+  background-color: darkgreen;
+}
+
+.dividingHR {
+  margin-bottom: 0 !important;
+}

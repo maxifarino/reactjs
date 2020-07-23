@@ -1,0 +1,59 @@
+.certificates {
+
+  .documents-scroll {
+    color: #fff !important;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(54,57,128,1) 18%, rgba(105,108,177,1) 67%);
+    border: 1px solid #080c5b;
+    padding: 5px;
+    padding-left: 12px;
+    margin: 0;
+    text-transform: uppercase !important;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:before {
+      margin-right: 10px;
+      font-weight: 100;
+      color: white;
+    }
+  }
+
+  .buttons-section {
+    background-color: darkslategray;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    justify-content: center;
+  }
+
+  .info-section {
+    span {
+      white-space: nowrap;
+      font-size: 13px;
+    }
+  }
+
+  input[type="text"] {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .175rem .35rem;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;    
+  }
+  .sm-input {
+    width: 200px !important;
+  }
+
+  a.bn {
+    padding: 11px 30px;
+  }  
+}

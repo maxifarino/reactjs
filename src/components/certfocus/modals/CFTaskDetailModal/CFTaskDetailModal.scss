@@ -1,0 +1,95 @@
+.taskDetail {
+
+  .modal-dialog {
+    max-width: 80%;
+    width: 80%;
+  }
+
+  .modal-content {
+    top: 100px;
+  }
+
+  .modal-body {
+    padding-top: 0 !important;
+    margin-top: 0;
+    //border: 2px solid #7ED0BC;
+  }
+
+  .innerTitle {
+    background-color: #7ED0BC;
+    color: #305866;
+    padding: 5px 0 !important;
+    margin: 10px 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  header {
+    padding: 0 !important;
+    margin: 00 0 10px 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #7ED0BC;
+    height: 40px;
+
+    .title {
+      color: #305866;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+
+  span.field-validation-message {
+    top: 5px;
+    right: 10px;
+  }
+
+  form.list-view-filter-form .filter-fields textarea {
+    height: 100px;
+  }
+
+  form.list-view-filter-form .filter-fields textarea:disabled {
+    background-color: #eeeeee;
+  }
+
+  .formButtons {
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
+    button, a {
+      border-radius: 6px;
+      border-bottom: 4px solid #305866;
+      text-transform: uppercase;
+      margin: 0 5px;
+    }
+
+    a {
+      padding: 12px 25px;
+      color: white;
+      font-size: 13px;
+      display: inline-block;
+      margin-right: 15px;
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+  }
+
+  .comment {
+    margin: auto auto 0 auto;
+  }
+  .comment button {
+    margin: 0 10px;
+  }
+}

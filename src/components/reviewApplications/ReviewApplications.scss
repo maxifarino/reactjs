@@ -1,0 +1,17 @@
+.tab-list {
+  .tab-list-header {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  .row {
+    display: flex;
+  }
+  .checks {
+  }
+  .buttons {
+    // justify-content: flex-end;
+    align-items: right;
+  }
+}

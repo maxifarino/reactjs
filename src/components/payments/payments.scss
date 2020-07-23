@@ -1,0 +1,54 @@
+.payment-method-container {
+  padding-left: 25%;
+  padding-right: 25%;
+
+  .payments-logos-container {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid gray;
+
+    .payments-logo {
+      vertical-align: middle;
+      max-width: 200px;
+      max-height: 150px;
+      width: auto;
+      height: auto;
+      margin: 10px;
+    }
+  }
+
+  .payments-message-container {
+    text-align: center;
+    padding: 35px 20px 15px 10px;
+  }
+
+  .payments-fee-message-container {
+    text-align: center;
+    padding: 10px 20px 15px 20px;
+  }
+
+  .payments-purchase-btn,
+  .payments-continue-btn {
+    margin-top: 10px;
+    background-color: #8cc739;
+    border-radius: 2.5px;
+    color: white;
+    border: none;
+    min-width: 100px;
+    min-height: 30px;
+  }
+
+  .payments-purchase-btn:hover,
+  .payments-continue-btn:hover {
+    background-color: #70ab1d
+  }
+
+  .payments-continue-btn {
+    float: right;
+  }
+
+  [data-braintree-id="toggle"] {
+    display: none;
+  }
+}

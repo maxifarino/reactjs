@@ -1,0 +1,60 @@
+@import '../../../assets/sass-variables/colors';
+
+.holder-requirement-sets-list-view {
+  .back-to-header {
+    margin-bottom: 15px;
+  }
+
+  .holder-requirement-sets-list-view-header {
+    .list-data {
+      strong {
+        color: $green-dark;
+      }
+    }
+
+    .list-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+  }
+  
+  .requirements-groups {
+    & > div:first-child > .card {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    & > div:not(:first-child):not(:last-child) > .card {
+      border-radius: 0;
+      border-top: none;
+    }
+
+    & > div:last-child > .card {
+      border-top: none;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+
+  h4, h5, strong {
+    color: $green-dark;
+  }
+
+  .attachments-icons > span,
+  .endorsements-icons > span {
+    font-size: 24px;
+    cursor: pointer;
+    vertical-align: middle;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+}
+
+.requirements-icons > span {
+  cursor: pointer; }

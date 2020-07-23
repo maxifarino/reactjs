@@ -1,0 +1,38 @@
+.departments-list-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.row.departmentUserButtons {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.departmentUsers {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 13px;
+}
+
+.departmentUsers h1 {
+    color: #2E5965;
+    padding: 0;
+    margin: 0 0 16px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.cancel-add-item {
+    color: #2E5965;
+    font-size: 14px;
+    font-style: italic;
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+}

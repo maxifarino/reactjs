@@ -1,0 +1,24 @@
+.holder-settings {
+  .settings-error {
+    color: red;
+    text-align: center;
+  }
+
+  .entity-info-form {
+    padding-top: 0px;
+    margin-left: 5%;
+
+    &.ml-0 {
+      select {
+        margin-left: 5%;
+        width: calc((100%) - (5%)) !important;
+      }
+    }
+
+    .admin-form-field-wrapper {
+      label {
+        width: 100% !important;
+      }
+    }
+  }
+}

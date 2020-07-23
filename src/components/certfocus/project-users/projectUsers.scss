@@ -1,0 +1,19 @@
+.previewUser {
+    margin-top: 10px;
+    border-top: 1px solid #2E5965;
+    padding-top: 10px;
+  h1 {
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 700;
+      display: inline-block;
+      color: #2E5965;
+  }
+  p {
+    margin: 0 0 0 10px;
+  }
+  p span {
+    color: #2E5965;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,64 @@
+@import "../../assets/sass-variables/_colors";
+
+/* Type Ahead Form Field */
+.form-type-ahead-container {
+  .type-ahead-search-bar-container {
+    margin: 0;
+    height: auto;
+    .type-ahead-search-bar {
+      padding: 0;
+      .input-container.grey-border {
+        border: 1px solid #CFCFD0;
+        border-radius: 0;
+        padding: 0 5px 0 0;
+        input {
+          width: calc(100% - 20px);
+          border: none;
+        }
+      }
+      .results-container {
+        font-size: 12px;
+        .spinner-wrapper {
+          .spinner {
+            width: 30px;
+          }
+        }
+      }
+    }
+    .type-ahead-search-bar.focused {
+      .input-container.grey-border {
+        padding: 8px 30px 8px 25px;
+        border: none;
+      }
+    }
+  }
+  &.invalid {
+    .type-ahead-search-bar-container{
+      .type-ahead-search-bar {
+        .input-container.grey-border {
+          border-color: red;
+        }
+      }
+    }
+  }
+}
+
+/* Removable Form Field */
+.form-removable-container {
+  .value-container {
+    display: flex;
+    height: 34px;
+    align-items: center;
+    .value-label {
+      font-size: 14px;
+    }
+    .remove-btn {
+      width: auto !important;
+      margin-left: 10px;
+      cursor: pointer;
+      &:before {
+        font-weight: bold;
+      }
+    }
+  }
+}

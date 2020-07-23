@@ -1,0 +1,63 @@
+@import "../../../assets/sass-variables/_colors";
+
+.forms-view {
+
+  section.forms-view-header {
+    margin-bottom: 0px;
+    text-align: left;
+    position: relative;
+  }
+
+  div.forms-filter-header,
+  div.forms-result-header {
+    margin-bottom: 2px;
+    text-align: left;
+    position: relative;
+    background-color: darkseagreen;
+    vertical-align: middle;
+    line-height: 50px;
+
+    .title {
+      color: white;
+    }
+  }
+
+  section.forms-view-filter {
+    margin-bottom: 0px;
+    text-align: left;
+    position: relative;
+    width: stretch; //-webkit-fill-available;
+  }
+
+  section.forms-view-result {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    width: stretch; //-webkit-fill-available;
+  }
+
+  .forms-filter-btn {
+    background-color: dodgerblue;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    min-width: 140px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+
+    &:hover {
+        text-decoration: none;
+    }
+  }
+}
+
+.tab-frame {
+  width: 100%;
+}
+
+.archivedCheckbox {
+  height: 16px !important;
+  width: 14px !important;
+}
